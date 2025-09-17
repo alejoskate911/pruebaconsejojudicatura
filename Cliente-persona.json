@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "08378975-4a7b-4eb2-96b5-85979680d326",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44624642"
+	},
+	"item": [
+		{
+			"name": "Lista clientes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar cliente",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clienteId\": \"51d3b17e-629a-4ecd-a97c-6bd33786fb78\",\n    \"contrasena\": \"contrasena2\",\n    \"estado\": true,\n    \"persona\":{\n        \"nombre\":\"Juan Perez Gomez\",\n        \"genero\": \"M\",\n        \"edad\": 30,\n        \"identificacion\": \"1002003001\",\n        \"direccion\": \"Quito\",\n        \"telefono\": \"0998414562\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clienteId\": \"51d3b17e-629a-4ecd-a97c-6bd33786fb78\",\n    \"contrasena\": \"contrasena2\",\n    \"estado\": true,\n    \"persona\":{\n        \"nombre\":\"Juan Perez Gomez\",\n        \"genero\": \"M\",\n        \"edad\": 30,\n        \"identificacion\": \"1002003001\",\n        \"direccion\": \"Quito\",\n        \"telefono\": \"0998414562\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/clientes/51d3b17e-629a-4ecd-a97c-6bd33786fb78",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"clientes",
+						"51d3b17e-629a-4ecd-a97c-6bd33786fb78"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
