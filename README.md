@@ -27,3 +27,5 @@ docker run -p 8080:8080 mi-springboot-app
 ```
 
 **Nota:** Se ha logrado realizar los microservicios funcionales conforme a las especificaciones, lo que ha falatado es la conexión de los mismos por falta de tiempo, se agradece la compresión.
+
+**Nombre:** Edison Alejandro Enríquez Tobar
